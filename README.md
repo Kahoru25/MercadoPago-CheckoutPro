@@ -15,8 +15,7 @@ Este módulo de pago utiliza el SDK de Mercado Pago para Node.js y te permite cr
 
 <h2>Instalación</h2>
 
-<pre><code>git clone https://github.com/Kahoru25/MercadoPago-CheckoutPro.git
-npm install</code></pre>
+<pre><code>git clone https://github.com/Kahoru25/MercadoPago-CheckoutPro.git</code></pre>
 
 Una vez clonado instale las dependencias
 
