@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+    <button id="checkout">
+        Link de pago en consola
+    </button>
+
+    <script>
+        // Espera a que se cargue completamente la página
+        window.addEventListener("load", async () => {
+            try {
+                const res = await fetch("create-order", {
+                    method: "POST"
+                });
+                const data = await res.json();
+                const paymentLink = data.result.init_point;
+                console.log("Enlace de pago:", paymentLink);
+            } catch (error) {
+                console.error("Error al obtener el enlace de pago:", error); //El link de pago se encuentra en consola del navegador
+            }
+        });
+    </script>
+</body>
+</html>

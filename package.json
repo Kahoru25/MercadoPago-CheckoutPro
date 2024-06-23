@@ -1,0 +1,22 @@
+{
+  "name": "paymentmercadopago",
+  "version": "1.0.0",
+  "description": "Pasarela de pago con MercadoPago",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Kahoru25"
+  },
+  "author": "Jeysson Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mercadopago": "^2.0.10",
+    "morgan": "^1.10.0"
+  }
+}
